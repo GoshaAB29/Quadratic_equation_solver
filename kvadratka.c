@@ -32,5 +32,5 @@ int main ()
             printf ("Уравнение не имеет корней");
         }
     }
-return 0;
+    return 0;
 }
