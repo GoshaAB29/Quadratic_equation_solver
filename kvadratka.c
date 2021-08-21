@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <math.h>
 
+void zero_ans ()
+{
+    printf ("Уравнение не имеет корней\n");
+}
+
 int main ()
 {
     float a = 0, b = 0, c = 0, D = 0, ans1 = 0, ans2 = 0;
@@ -14,7 +19,7 @@ int main ()
             if (c == 0) {
                 printf ("Уравнение имеет бесконечность решений\n");
             } else {
-                printf ("Уравнение не имеет корней\n");
+                zero_ans ();
             }
         } else {
             ans1 = -c / b;
@@ -31,7 +36,7 @@ int main ()
                 printf ("Уравнение имеет 2 корня: %f и %f", ans1, ans2);
             }
         } else {
-            printf ("Уравнение не имеет корней");
+            zero_ans ();
         }
     }
 
