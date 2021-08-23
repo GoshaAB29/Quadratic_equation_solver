@@ -1,15 +1,12 @@
 #include "TXLib.h"
 #include <stdio.h>
 #include <math.h>
-
-void zero_ans ()
-{
-    printf ("Уравнение не имеет корней\n");
-}
+#include "kvadratka_functions.c"
 
 int main ()
 {
     float a = 0, b = 0, c = 0, D = 0, ans1 = 0, ans2 = 0;
+    int kolvoans = 0;
 
     printf ("Вас приветствует решатель квадратного уравнения. Я умею решать уравнения вида Ax^2+Bx+C=0. Введите, пожалуйста, эти коэффициенты: ");
     scanf ("%f %f %f", &a, &b, &c);
@@ -23,20 +20,25 @@ int main ()
             }
         } else {
             ans1 = -c / b;
-            printf ("Уравнение имеет единственный корень: x=%f\n", ans1);
+            printf ("Уравнение имеет единственный корень: x=%.3f\n", ans1);
         }
     } else {
         D = b * b - 4 * a * c;
-        if (D >= 0) {
-            ans1 = (-b + sqrt(D)) / 2 / a;
-            ans2 = (-b - sqrt(D)) / 2 / a;
-            if (ans1 == ans2) {
-                printf ("Уравнение имеет единственный корень: x=%f", ans1);
-            } else {
-                printf ("Уравнение имеет 2 корня: %f и %f", ans1, ans2);
-            }
-        } else {
-            zero_ans ();
+        kolvoans=kolvo_ans (D);
+
+        switch (kolvoans) {
+            case 0:
+                zero_ans ();
+                break;
+            case 1:
+                ans1 = -b / 2 / a;
+                printf ("Уравнение имеет единственный корень: x=%.3f\n", ans1);
+                break;
+            case 2:
+                ans1 = (-b + sqrt(D)) / 2 / a;
+                ans2 = (-b - sqrt(D)) / 2 / a;
+                printf ("Уравнение имеет 2 корня: %.3f и %.3f\n", ans1, ans2);
+                break;
         }
     }
 
