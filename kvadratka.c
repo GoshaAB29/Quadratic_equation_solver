@@ -5,40 +5,43 @@
 
 int main ()
 {
-    float a = 0, b = 0, c = 0, D = 0, ans1 = 0, ans2 = 0;
-    int kolvoans = 0;
+    double a = 0, b = 0, c = 0;
 
-    printf ("Вас приветствует решатель квадратного уравнения. Я умею решать уравнения вида Ax^2+Bx+C=0. Введите, пожалуйста, эти коэффициенты: ");
+    printf ("Welcome to the quadratic equation solver. I can solve equations like Ax ^ 2 + Bx + C = 0. Please enter these coefficients: ");
     scanf ("%f %f %f", &a, &b, &c);
 
+    double  ans1 = 0, ans2 = 0;
     if (a == 0) {
         if (b == 0) {
             if (c == 0) {
-                printf ("Уравнение имеет бесконечность решений\n");
-            } else {
+                printf ("The equation has infinity of solutions\n");
+            } else {                   // a = 0, b = 0, c != 0
                 zero_ans ();
             }
-        } else {
-            ans1 = -c / b;
-            printf ("Уравнение имеет единственный корень: x=%.3f\n", ans1);
+        } else {                       // a = 0, b != 0, c != 0
+            solve_linear (b, c, &ans1);
+            printf ("The equation has a single root: x=%.3f\n", ans1);
         }
-    } else {
-        D = b * b - 4 * a * c;
-        kolvoans=kolvo_ans (D);
+    } else {                           // a != 0, b != 0, c != 0
+        double  D = b * b - 4 * a * c;
+
+        int kolvoans = solve_square (a, b, c, &ans1, &ans2);
 
         switch (kolvoans) {
             case 0:
                 zero_ans ();
                 break;
+
             case 1:
-                ans1 = -b / 2 / a;
-                printf ("Уравнение имеет единственный корень: x=%.3f\n", ans1);
+                printf ("The equation has a single root: x=%.3f\n", ans1);
                 break;
+
             case 2:
-                ans1 = (-b + sqrt(D)) / 2 / a;
-                ans2 = (-b - sqrt(D)) / 2 / a;
-                printf ("Уравнение имеет 2 корня: %.3f и %.3f\n", ans1, ans2);
+                printf ("The equation has two roots: %.3f и %.3f\n", ans1, ans2);
                 break;
+
+            default:
+                printf ("Error,number of solutions is impossible");
         }
     }
 

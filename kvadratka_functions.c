@@ -1,11 +1,27 @@
 void zero_ans ()
 {
-    printf ("РЈСЂР°РІРЅРµРЅРёРµ РЅРµ РёРјРµРµС‚ РєРѕСЂРЅРµР№\n");
+    printf ("Equation hasn't roots\n");
 }
 
-int kolvo_ans (float D)
+void solve_linear (double b, double c, double *ans1)                        // линейный случай квадратного уравнения
 {
-    if (D > 0) return 2;
-    if (D == 0) return 1;
-    if (D < 0) return 0;
+    *ans1 = -b / c;
+}
+
+int solve_square (double a, double b, double c, double *ans1, double *ans2) // полное квадратное уравнение (а != 0, b != 0, c != 0)
+{
+    double D = b * b - 4 * a * c;
+
+    if (D > 0.0) {
+        *ans1 = (-b + sqrt(D)) / 2 / a;
+        *ans2 = (-b / a) - *ans1;
+        return 2;
+    } else {                           //  если D <= 0
+        if (D == 0.0) {
+            *ans1 = *ans2 = -b / 2 / a;
+            return 1;
+        } else {                       // если D < 0
+            return 0;
+        }
+    }
 }

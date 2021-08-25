@@ -1,0 +1,48 @@
+#include "TXLib.h"
+#include <stdio.h>
+#include <math.h>
+#include "kvadratka_functions.c"
+
+int main ()
+{
+    double a = 0, b = 0, c = 0;
+
+    printf ("Вас приветствует решатель квадратного уравнения. Я умею решать уравнения вида Ax^2+Bx+C=0. Введите, пожалуйста, эти коэффициенты: ");
+    scanf ("%f %f %f", &a, &b, &c);
+
+    double  ans1 = 0, ans2 = 0;
+    if (a == 0) {
+        if (b == 0) {
+            if (c == 0) {
+                printf ("Уравнение имеет бесконечность решений\n");
+            } else {
+                zero_ans ();
+            }
+        } else {
+            solve_linear (b, c, ans1);
+            printf ("Уравнение имеет единственный корень: x=%.3f\n", ans1);
+        }
+    } else {
+      double  D = b * b - 4 * a * c;
+        int kolvoans = solve_square (a, b, c, ans1, ans2);
+
+        switch (kolvoans) {
+            case 0:
+                zero_ans ();
+                break;
+
+            case 1:
+                printf ("Уравнение имеет единственный корень: x=%.3f\n", ans1);
+                break;
+
+            case 2:
+                printf ("Уравнение имеет 2 корня: %.3f и %.3f\n", ans1, ans2);
+                break;
+
+            default:
+                printf ("Error,number of solutions is impossible");
+        }
+    }
+
+    return 0;
+}
