@@ -8,10 +8,8 @@ void solve_linear (double b, double c, double *ans1)                        // л
     *ans1 = -b / c;
 }
 
-int solve_square (double a, double b, double c, double *ans1, double *ans2) // полное квадратное уравнение (а != 0, b != 0, c != 0)
+int solve_square (double D, double a, double b, double c, double *ans1, double *ans2) // полное квадратное уравнение (а != 0, b != 0, c != 0), return - количество корней
 {
-    double D = b * b - 4 * a * c;
-
     if (D > 0.0) {
         *ans1 = (-b + sqrt(D)) / 2 / a;
         *ans2 = (-b / a) - *ans1;

@@ -7,8 +7,8 @@ int main ()
 {
     double a = 0, b = 0, c = 0;
 
-    printf ("Welcome to the quadratic equation solver. I can solve equations like Ax ^ 2 + Bx + C = 0. Please enter these coefficients: ");
-    scanf ("%f %f %f", &a, &b, &c);
+    printf ("Welcome to the quadratic equation solver. I can solve equations like Ax ^ 2 + Bx + C = 0. Please enter these coefficients:\n");
+    scanf ("%lf %lf %lf", &a, &b, &c);
 
     double  ans1 = 0, ans2 = 0;
     if (a == 0) {
@@ -20,12 +20,12 @@ int main ()
             }
         } else {                       // a = 0, b != 0, c != 0
             solve_linear (b, c, &ans1);
-            printf ("The equation has a single root: x=%.3f\n", ans1);
+            printf (" tsesggd ");
+            printf ("The equation has a single root: x=%.3lf\n", ans1);
         }
     } else {                           // a != 0, b != 0, c != 0
         double  D = b * b - 4 * a * c;
-
-        int kolvoans = solve_square (a, b, c, &ans1, &ans2);
+        int kolvoans = solve_square (D, a, b, c, &ans1, &ans2);
 
         switch (kolvoans) {
             case 0:
@@ -33,15 +33,15 @@ int main ()
                 break;
 
             case 1:
-                printf ("The equation has a single root: x=%.3f\n", ans1);
+                printf ("The equation has a single root: x=%.3lf\n", ans1);
                 break;
 
             case 2:
-                printf ("The equation has two roots: %.3f и %.3f\n", ans1, ans2);
+                printf ("The equation has two roots: %.3lf and %.3lf\n", ans1, ans2);
                 break;
 
             default:
-                printf ("Error,number of solutions is impossible");
+                printf ("ERROR, number of solutions is impossible");
         }
     }
 
