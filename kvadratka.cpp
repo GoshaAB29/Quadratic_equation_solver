@@ -20,7 +20,6 @@ int main ()
             }
         } else {                       // a = 0, b != 0, c != 0
             solve_linear (b, c, &ans1);
-            printf (" tsesggd ");
             printf ("The equation has a single root: x=%.3lf\n", ans1);
         }
     } else {                           // a != 0, b != 0, c != 0
