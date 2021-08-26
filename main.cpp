@@ -1,19 +1,26 @@
 #include "TXLib.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
-#include "kvadratka_functions.cpp"
+#include "header/solve_square.h"
+#include "header/output_square.h"
+#include "header/input_square.h"
 
-int main ()
+int main ()     //functions : input, solve_square,
 {
     double a = 0, b = 0, c = 0;
 
     printf ("Welcome to the quadratic equation solver. I can solve equations like Ax ^ 2 + Bx + C = 0. Please enter these coefficients:\n");
     scanf ("%lf %lf %lf", &a, &b, &c);
 
+    while ((getchar() != '\n') && (getchar() != EOF))
+    continue;
+
     double  ans1 = 0, ans2 = 0;
-    if (a == 0) {
-        if (b == 0) {
-            if (c == 0) {
+
+    if (is_equal (a, 0)) {
+        if (is_equal (b, 0)) {
+            if (is_equal (c, 0)) {
                 printf ("The equation has infinity of solutions\n");
             } else {                   // a = 0, b = 0, c != 0
                 zero_ans ();
@@ -23,8 +30,7 @@ int main ()
             printf ("The equation has a single root: x=%.3lf\n", ans1);
         }
     } else {                           // a != 0, b != 0, c != 0
-        double  D = b * b - 4 * a * c;
-        int kolvoans = solve_square (D, a, b, c, &ans1, &ans2);
+        int kolvoans = solve_square (a, b, c, &ans1, &ans2);
 
         switch (kolvoans) {
             case 0:
