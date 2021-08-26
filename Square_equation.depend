@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1629995228 source:c:\projects\square_equation\main.cpp
+	"TXLib.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"header/solve_square.h"
+	"header/output_square.h"
+	"header/input_square.h"
+
+1629992542 c:\projects\square_equation\header\solve_square.h
+	<math.h>
+	<assert.h>
+
+1629997191 c:\projects\square_equation\header\output_square.h
+	<assert.h>
+
+1629994404 c:\projects\square_equation\header\input_square.h
+	<assert.h>
+
+1629994685 source:c:\projects\square_equation\sourse\input_square.cpp
+	<stdio.h>
+	"../header/input_square.h"
+
+1629997551 source:c:\projects\square_equation\sourse\output_square.cpp
+	<stdio.h>
+	"../header/output_square.h"
+
+1629992568 source:c:\projects\square_equation\sourse\solve_square.cpp
+	"../header/solve_square.h"
+
