@@ -1,0 +1,164 @@
+\hypertarget{solve__square_8h}{}\doxysection{C\+:/\+Projects/\+Square\+\_\+equation/header/solve\+\_\+square.h File Reference}
+\label{solve__square_8h}\index{C:/Projects/Square\_equation/header/solve\_square.h@{C:/Projects/Square\_equation/header/solve\_square.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492f}{solve\+\_\+status}} \{ \newline
+\mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fac920bb6b308a59191da9df6d45d5afe5}{ZERO\+\_\+\+ANS}} = 0
+, \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fa2bb5e52523fed2a0264be2248f1fe136}{ONE\+\_\+\+ANS}} = 1
+, \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fa75b1e51849249c98864f9f49e889a77c}{TWO\+\_\+\+ANS}} = 2
+, \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fa9f95cb91b6b2615740dd26865a89ba69}{INF\+\_\+\+ANS}} = 3
+, \newline
+\mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fa1e32247aec4b11bba3307c323c612209}{ERROR\+\_\+\+ANS}} = -\/1
+ \}
+\begin{DoxyCompactList}\small\item\em Possible options for the number of equation answers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{solve__square_8h_a7126a127b9bf7a754078763825c7d5f7}{is\+\_\+equal}} (double val1, double val2)
+\item 
+int \mbox{\hyperlink{solve__square_8h_a9f2e0b8ccc99b2dffe88c57a7ca76c01}{solve\+\_\+full\+\_\+square}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\item 
+int \mbox{\hyperlink{solve__square_8h_ab64c3b61a4e6c2efabee80e88ea78a7c}{solve\+\_\+linear}} (double b, double c, double $\ast$x)
+\item 
+int \mbox{\hyperlink{solve__square_8h_aaff927290f6b2ccdca47881b30bf253a}{solve\+\_\+square}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{solve__square_8h_a96d62e9c3c13685e014b35ba9af11ea8}{PRECISION}} = 0.\+001
+\begin{DoxyCompactList}\small\item\em calculating everything needed to solve the equation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{solve__square_8h_a72bc10546324dde11447f116656a492f}\label{solve__square_8h_a72bc10546324dde11447f116656a492f}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_status@{solve\_status}}
+\index{solve\_status@{solve\_status}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_status}{solve\_status}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492f}{solve\+\_\+status}}}
+
+
+
+Possible options for the number of equation answers. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ZERO\_ANS@{ZERO\_ANS}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!ZERO\_ANS@{ZERO\_ANS}}}\mbox{\Hypertarget{solve__square_8h_a72bc10546324dde11447f116656a492fac920bb6b308a59191da9df6d45d5afe5}\label{solve__square_8h_a72bc10546324dde11447f116656a492fac920bb6b308a59191da9df6d45d5afe5}} 
+ZERO\+\_\+\+ANS&no solutions \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ONE\_ANS@{ONE\_ANS}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!ONE\_ANS@{ONE\_ANS}}}\mbox{\Hypertarget{solve__square_8h_a72bc10546324dde11447f116656a492fa2bb5e52523fed2a0264be2248f1fe136}\label{solve__square_8h_a72bc10546324dde11447f116656a492fa2bb5e52523fed2a0264be2248f1fe136}} 
+ONE\+\_\+\+ANS&one answer \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TWO\_ANS@{TWO\_ANS}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!TWO\_ANS@{TWO\_ANS}}}\mbox{\Hypertarget{solve__square_8h_a72bc10546324dde11447f116656a492fa75b1e51849249c98864f9f49e889a77c}\label{solve__square_8h_a72bc10546324dde11447f116656a492fa75b1e51849249c98864f9f49e889a77c}} 
+TWO\+\_\+\+ANS&two answers \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INF\_ANS@{INF\_ANS}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!INF\_ANS@{INF\_ANS}}}\mbox{\Hypertarget{solve__square_8h_a72bc10546324dde11447f116656a492fa9f95cb91b6b2615740dd26865a89ba69}\label{solve__square_8h_a72bc10546324dde11447f116656a492fa9f95cb91b6b2615740dd26865a89ba69}} 
+INF\+\_\+\+ANS&infinity of answers \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_ANS@{ERROR\_ANS}!solve\_square.h@{solve\_square.h}}\index{solve\_square.h@{solve\_square.h}!ERROR\_ANS@{ERROR\_ANS}}}\mbox{\Hypertarget{solve__square_8h_a72bc10546324dde11447f116656a492fa1e32247aec4b11bba3307c323c612209}\label{solve__square_8h_a72bc10546324dde11447f116656a492fa1e32247aec4b11bba3307c323c612209}} 
+ERROR\+\_\+\+ANS&an error has occurred \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{solve__square_8h_a7126a127b9bf7a754078763825c7d5f7}\label{solve__square_8h_a7126a127b9bf7a754078763825c7d5f7}} 
+\index{solve\_square.h@{solve\_square.h}!is\_equal@{is\_equal}}
+\index{is\_equal@{is\_equal}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{is\_equal()}{is\_equal()}}
+{\footnotesize\ttfamily bool is\+\_\+equal (\begin{DoxyParamCaption}\item[{double}]{val1,  }\item[{double}]{val2 }\end{DoxyParamCaption})}
+
+Compares 2 numbers
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em val1,val2} & -\/ compared numbers\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+truth
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+not numbers are considered equal 
+\end{DoxyNote}
+\mbox{\Hypertarget{solve__square_8h_a9f2e0b8ccc99b2dffe88c57a7ca76c01}\label{solve__square_8h_a9f2e0b8ccc99b2dffe88c57a7ca76c01}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_full\_square@{solve\_full\_square}}
+\index{solve\_full\_square@{solve\_full\_square}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_full\_square()}{solve\_full\_square()}}
+{\footnotesize\ttfamily int solve\+\_\+full\+\_\+square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Solve the special case of the quadratic equation when the coefficient a! = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b,c} & -\/ coefficients \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & -\/ pointer to the 1st answer \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & -\/ pointer to the 2st answer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of answers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8h_ab64c3b61a4e6c2efabee80e88ea78a7c}\label{solve__square_8h_ab64c3b61a4e6c2efabee80e88ea78a7c}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_linear@{solve\_linear}}
+\index{solve\_linear@{solve\_linear}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_linear()}{solve\_linear()}}
+{\footnotesize\ttfamily int solve\+\_\+linear (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
+
+Solve a linear equation -\/ one of the special cases of a quadratic equation
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b,c} & -\/ coefficients \\
+\hline
+\mbox{\texttt{ out}}  & {\em x} & -\/ answer linear equation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of answers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8h_aaff927290f6b2ccdca47881b30bf253a}\label{solve__square_8h_aaff927290f6b2ccdca47881b30bf253a}} 
+\index{solve\_square.h@{solve\_square.h}!solve\_square@{solve\_square}}
+\index{solve\_square@{solve\_square}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{solve\_square()}{solve\_square()}}
+{\footnotesize\ttfamily int solve\+\_\+square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Solves a square equation ax$^\wedge$2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b,c} & -\/ coefficients \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & -\/ pointer to the 1st answer \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & -\/ pointer to the 2st answer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of answers
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+In case of Error, returns ERROR\+\_\+\+ANS 
+\end{DoxyNote}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{solve__square_8h_a96d62e9c3c13685e014b35ba9af11ea8}\label{solve__square_8h_a96d62e9c3c13685e014b35ba9af11ea8}} 
+\index{solve\_square.h@{solve\_square.h}!PRECISION@{PRECISION}}
+\index{PRECISION@{PRECISION}!solve\_square.h@{solve\_square.h}}
+\doxysubsubsection{\texorpdfstring{PRECISION}{PRECISION}}
+{\footnotesize\ttfamily const double PRECISION = 0.\+001}
+
+
+
+calculating everything needed to solve the equation 
+
+Precision of comparing numbers 

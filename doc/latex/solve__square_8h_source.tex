@@ -1,0 +1,44 @@
+\hypertarget{solve__square_8h_source}{}\doxysection{solve\+\_\+square.\+h}
+\label{solve__square_8h_source}\index{C:/Projects/Square\_equation/header/solve\_square.h@{C:/Projects/Square\_equation/header/solve\_square.h}}
+\mbox{\hyperlink{solve__square_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <assert.h>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{solve__square_8h_a96d62e9c3c13685e014b35ba9af11ea8}{PRECISION}} = 0.001;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{12 \textcolor{keyword}{enum} \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492f}{solve\_status}} \{}
+\DoxyCodeLine{13     \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fac920bb6b308a59191da9df6d45d5afe5}{ZERO\_ANS}} = 0,                              }
+\DoxyCodeLine{14     \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fa2bb5e52523fed2a0264be2248f1fe136}{ONE\_ANS}} = 1,                               }
+\DoxyCodeLine{15     \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fa75b1e51849249c98864f9f49e889a77c}{TWO\_ANS}} = 2,                               }
+\DoxyCodeLine{16     \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fa9f95cb91b6b2615740dd26865a89ba69}{INF\_ANS}} = 3,                               }
+\DoxyCodeLine{17     \mbox{\hyperlink{solve__square_8h_a72bc10546324dde11447f116656a492fa1e32247aec4b11bba3307c323c612209}{ERROR\_ANS}} = -\/1,                            }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{30 \textcolor{comment}{}\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keywordtype}{bool} \mbox{\hyperlink{solve__square_8h_a7126a127b9bf7a754078763825c7d5f7}{is\_equal}} (\textcolor{keywordtype}{double} val1, \textcolor{keywordtype}{double} val2);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{43 \textcolor{comment}{}\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keywordtype}{int} \mbox{\hyperlink{solve__square_8h_a9f2e0b8ccc99b2dffe88c57a7ca76c01}{solve\_full\_square}} (\textcolor{keywordtype}{double} a, \textcolor{keywordtype}{double} b, \textcolor{keywordtype}{double} c, \textcolor{keywordtype}{double} *x1, \textcolor{keywordtype}{double} *x2);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{55 \textcolor{comment}{}\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{keywordtype}{int} \mbox{\hyperlink{solve__square_8h_ab64c3b61a4e6c2efabee80e88ea78a7c}{solve\_linear}} (\textcolor{keywordtype}{double} b, \textcolor{keywordtype}{double} c, \textcolor{keywordtype}{double} *x);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{70 \textcolor{comment}{}\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{keywordtype}{int} \mbox{\hyperlink{solve__square_8h_aaff927290f6b2ccdca47881b30bf253a}{solve\_square}} (\textcolor{keywordtype}{double} a, \textcolor{keywordtype}{double} b, \textcolor{keywordtype}{double} c, \textcolor{keywordtype}{double} *x1, \textcolor{keywordtype}{double} *x2);}
+\DoxyCodeLine{73 }
+
+\end{DoxyCode}

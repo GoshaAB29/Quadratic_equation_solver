@@ -1,0 +1,97 @@
+\hypertarget{solve__square_8cpp}{}\doxysection{C\+:/\+Projects/\+Square\+\_\+equation/sourse/solve\+\_\+square.cpp File Reference}
+\label{solve__square_8cpp}\index{C:/Projects/Square\_equation/sourse/solve\_square.cpp@{C:/Projects/Square\_equation/sourse/solve\_square.cpp}}
+{\ttfamily \#include \char`\"{}../header/solve\+\_\+square.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{solve__square_8cpp_a7126a127b9bf7a754078763825c7d5f7}{is\+\_\+equal}} (double val1, double val2)
+\item 
+int \mbox{\hyperlink{solve__square_8cpp_a9f2e0b8ccc99b2dffe88c57a7ca76c01}{solve\+\_\+full\+\_\+square}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\item 
+int \mbox{\hyperlink{solve__square_8cpp_ab64c3b61a4e6c2efabee80e88ea78a7c}{solve\+\_\+linear}} (double b, double c, double $\ast$x)
+\item 
+int \mbox{\hyperlink{solve__square_8cpp_aaff927290f6b2ccdca47881b30bf253a}{solve\+\_\+square}} (double a, double b, double c, double $\ast$x1, double $\ast$x2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{solve__square_8cpp_a7126a127b9bf7a754078763825c7d5f7}\label{solve__square_8cpp_a7126a127b9bf7a754078763825c7d5f7}} 
+\index{solve\_square.cpp@{solve\_square.cpp}!is\_equal@{is\_equal}}
+\index{is\_equal@{is\_equal}!solve\_square.cpp@{solve\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{is\_equal()}{is\_equal()}}
+{\footnotesize\ttfamily bool is\+\_\+equal (\begin{DoxyParamCaption}\item[{double}]{val1,  }\item[{double}]{val2 }\end{DoxyParamCaption})}
+
+Compares 2 numbers
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em val1,val2} & -\/ compared numbers\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+truth
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+not numbers are considered equal 
+\end{DoxyNote}
+\mbox{\Hypertarget{solve__square_8cpp_a9f2e0b8ccc99b2dffe88c57a7ca76c01}\label{solve__square_8cpp_a9f2e0b8ccc99b2dffe88c57a7ca76c01}} 
+\index{solve\_square.cpp@{solve\_square.cpp}!solve\_full\_square@{solve\_full\_square}}
+\index{solve\_full\_square@{solve\_full\_square}!solve\_square.cpp@{solve\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_full\_square()}{solve\_full\_square()}}
+{\footnotesize\ttfamily int solve\+\_\+full\+\_\+square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Solve the special case of the quadratic equation when the coefficient a! = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b,c} & -\/ coefficients \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & -\/ pointer to the 1st answer \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & -\/ pointer to the 2st answer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of answers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8cpp_ab64c3b61a4e6c2efabee80e88ea78a7c}\label{solve__square_8cpp_ab64c3b61a4e6c2efabee80e88ea78a7c}} 
+\index{solve\_square.cpp@{solve\_square.cpp}!solve\_linear@{solve\_linear}}
+\index{solve\_linear@{solve\_linear}!solve\_square.cpp@{solve\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_linear()}{solve\_linear()}}
+{\footnotesize\ttfamily int solve\+\_\+linear (\begin{DoxyParamCaption}\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
+
+Solve a linear equation -\/ one of the special cases of a quadratic equation
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em b,c} & -\/ coefficients \\
+\hline
+\mbox{\texttt{ out}}  & {\em x} & -\/ answer linear equation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of answers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solve__square_8cpp_aaff927290f6b2ccdca47881b30bf253a}\label{solve__square_8cpp_aaff927290f6b2ccdca47881b30bf253a}} 
+\index{solve\_square.cpp@{solve\_square.cpp}!solve\_square@{solve\_square}}
+\index{solve\_square@{solve\_square}!solve\_square.cpp@{solve\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_square()}{solve\_square()}}
+{\footnotesize\ttfamily int solve\+\_\+square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c,  }\item[{double $\ast$}]{x1,  }\item[{double $\ast$}]{x2 }\end{DoxyParamCaption})}
+
+Solves a square equation ax$^\wedge$2 + bx + c = 0
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a,b,c} & -\/ coefficients \\
+\hline
+\mbox{\texttt{ out}}  & {\em x1} & -\/ pointer to the 1st answer \\
+\hline
+\mbox{\texttt{ out}}  & {\em x2} & -\/ pointer to the 2st answer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of answers
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+In case of Error, returns ERROR\+\_\+\+ANS 
+\end{DoxyNote}
