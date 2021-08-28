@@ -2,7 +2,7 @@
 
 bool is_equal (double val1, double val2)
 {
-    if ((val1 != val1) && (val2 != val2))
+    if (isnan (val1) && isnan (val2))
         return true;
     else
         return ((fabs(val1 - val2) < PRECISION) ? true : false);
@@ -14,10 +14,14 @@ int solve_full_square (double a, double b, double c, double *x1, double *x2)
     assert (isfinite (D));
 
     if ((is_equal (D, 0) == false) && (D > 0)) {
+
         *x1 = (-b + sqrt(D)) / (2 * a);
         *x2 = (-b / a) - *x1;
+
         return TWO_ANS;
-    } else {                                                //  если D <= 0
+
+    } else {
+                                                    //  если D <= 0
         if (is_equal (D, 0) == true) {
         *x1 = -b / (2 * a);
         return ONE_ANS;

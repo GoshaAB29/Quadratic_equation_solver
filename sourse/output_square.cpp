@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "../header/output_square.h"
 
 void output_square (int num_ans, double *ans1, double *ans2)
