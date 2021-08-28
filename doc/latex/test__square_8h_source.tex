@@ -8,14 +8,33 @@
 \DoxyCodeLine{4 \textcolor{preprocessor}{\#include <math.h>}}
 \DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../header/solve\_square.h"{}}}
 \DoxyCodeLine{6 }
-\DoxyCodeLine{7 \textcolor{keywordtype}{void} \mbox{\hyperlink{test__square_8h_a288420d2cffa7ea7910cd21176735b69}{test\_output}} (\textcolor{keywordtype}{int} test\_num, \textcolor{keywordtype}{double} x1, \textcolor{keywordtype}{double} x2);}
-\DoxyCodeLine{8 }
-\DoxyCodeLine{9 \textcolor{keywordtype}{int} \mbox{\hyperlink{test__square_8h_ad3a777f549e7505fd06462ec11759123}{UnitTest\_Square}} (\textcolor{keywordtype}{int} test\_num, \textcolor{keywordtype}{int} num\_ans\_best, \textcolor{keywordtype}{double} ans1\_best,}
-\DoxyCodeLine{10                      \textcolor{keywordtype}{double} ans2\_best, \textcolor{keywordtype}{double} a, \textcolor{keywordtype}{double} b, \textcolor{keywordtype}{double} c);}
-\DoxyCodeLine{11 }
-\DoxyCodeLine{12 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{17 \textcolor{comment}{}\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{18 }
-\DoxyCodeLine{19 \textcolor{keywordtype}{int} \mbox{\hyperlink{test__square_8h_a169a2e1c3800a87ef31b1c0d2cdc562a}{Run\_Unit\_Tests}} ();}
+\DoxyCodeLine{8 \textcolor{keyword}{struct }\mbox{\hyperlink{structsquare__equation}{square\_equation}}}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10 \textcolor{keywordtype}{int} \mbox{\hyperlink{structsquare__equation_a6bef169113622a91c2b03553725ea5cd}{test\_num}};                                      }
+\DoxyCodeLine{11 \textcolor{keywordtype}{int} \mbox{\hyperlink{structsquare__equation_acff328c92db7faa760a83ffbb1978a12}{num\_ans\_true}};                                  }
+\DoxyCodeLine{12 \textcolor{keywordtype}{double} \mbox{\hyperlink{structsquare__equation_a667ec13bcf9d32127485316286cefb56}{ans1\_true}};                                  }
+\DoxyCodeLine{13 \textcolor{keywordtype}{double} \mbox{\hyperlink{structsquare__equation_ab8be0bd01909b159a8417c7a4f1ecc52}{ans2\_true}};                                  }
+\DoxyCodeLine{14 \textcolor{keywordtype}{double} \mbox{\hyperlink{structsquare__equation_a23467c642c17ba9e263a439ca83ecadd}{a}};                                          }
+\DoxyCodeLine{15 \textcolor{keywordtype}{double} \mbox{\hyperlink{structsquare__equation_a8f480634bd274493e0c50430518316b1}{b}};                                          }
+\DoxyCodeLine{16 \textcolor{keywordtype}{double} \mbox{\hyperlink{structsquare__equation_aefe2c9f2d3e1ce54edda726f7f579636}{c}};                                          }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{21 \textcolor{keywordtype}{void} \mbox{\hyperlink{test__square_8h_a500f3e6675ddc2ae311f22f90e919653}{test\_init}} ();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{29 \textcolor{comment}{}\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keywordtype}{void} \mbox{\hyperlink{test__square_8h_a288420d2cffa7ea7910cd21176735b69}{test\_output}} (\textcolor{keywordtype}{int} test\_num, \textcolor{keywordtype}{double} x1, \textcolor{keywordtype}{double} x2);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{43 \textcolor{comment}{}\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{keywordtype}{int} \mbox{\hyperlink{test__square_8h_ac40901951d30aa42f4dc531481aca048}{unit\_test\_square}} (\mbox{\hyperlink{structsquare__equation}{square\_equation}} \mbox{\hyperlink{test__square_8cpp_a14b493d5d40f160bd5bfc0024a058c6f}{tests}});}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{52 \textcolor{comment}{}\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{keywordtype}{int} \mbox{\hyperlink{test__square_8h_a229302b3f6038aa41fa1395e68d98bb3}{run\_unit\_tests}} ();}
 
 \end{DoxyCode}

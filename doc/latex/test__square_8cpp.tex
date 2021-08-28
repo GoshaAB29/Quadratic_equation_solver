@@ -4,20 +4,27 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{test__square_8cpp_a288420d2cffa7ea7910cd21176735b69}{test\+\_\+output}} (int test\+\_\+num, double x1, double x2)
-\begin{DoxyCompactList}\small\item\em Function testing for correctness. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{test__square_8cpp_ad3a777f549e7505fd06462ec11759123}{Unit\+Test\+\_\+\+Square}} (int test\+\_\+num, int num\+\_\+ans\+\_\+best, double ans1\+\_\+best, double ans2\+\_\+best, double a, double b, double c)
+void \mbox{\hyperlink{test__square_8cpp_a2018f9662c57d511887dca1d948e90b5}{tests\+\_\+init}} ()
 \item 
-int \mbox{\hyperlink{test__square_8cpp_a169a2e1c3800a87ef31b1c0d2cdc562a}{Run\+\_\+\+Unit\+\_\+\+Tests}} ()
+void \mbox{\hyperlink{test__square_8cpp_a288420d2cffa7ea7910cd21176735b69}{test\+\_\+output}} (int test\+\_\+num, double x1, double x2)
+\item 
+int \mbox{\hyperlink{test__square_8cpp_ac40901951d30aa42f4dc531481aca048}{unit\+\_\+test\+\_\+square}} (\mbox{\hyperlink{structsquare__equation}{square\+\_\+equation}} \mbox{\hyperlink{test__square_8cpp_a14b493d5d40f160bd5bfc0024a058c6f}{tests}})
+\item 
+int \mbox{\hyperlink{test__square_8cpp_a229302b3f6038aa41fa1395e68d98bb3}{run\+\_\+unit\+\_\+tests}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structsquare__equation}{square\+\_\+equation}} \mbox{\hyperlink{test__square_8cpp_a14b493d5d40f160bd5bfc0024a058c6f}{tests}} \mbox{[}6\mbox{]}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{test__square_8cpp_a169a2e1c3800a87ef31b1c0d2cdc562a}\label{test__square_8cpp_a169a2e1c3800a87ef31b1c0d2cdc562a}} 
-\index{test\_square.cpp@{test\_square.cpp}!Run\_Unit\_Tests@{Run\_Unit\_Tests}}
-\index{Run\_Unit\_Tests@{Run\_Unit\_Tests}!test\_square.cpp@{test\_square.cpp}}
-\doxysubsubsection{\texorpdfstring{Run\_Unit\_Tests()}{Run\_Unit\_Tests()}}
-{\footnotesize\ttfamily int Run\+\_\+\+Unit\+\_\+\+Tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{test__square_8cpp_a229302b3f6038aa41fa1395e68d98bb3}\label{test__square_8cpp_a229302b3f6038aa41fa1395e68d98bb3}} 
+\index{test\_square.cpp@{test\_square.cpp}!run\_unit\_tests@{run\_unit\_tests}}
+\index{run\_unit\_tests@{run\_unit\_tests}!test\_square.cpp@{test\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{run\_unit\_tests()}{run\_unit\_tests()}}
+{\footnotesize\ttfamily int run\+\_\+unit\+\_\+tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Calling tests and counting ERRORs
 
@@ -30,13 +37,49 @@ failed -\/ number of failed tests
 \doxysubsubsection{\texorpdfstring{test\_output()}{test\_output()}}
 {\footnotesize\ttfamily void test\+\_\+output (\begin{DoxyParamCaption}\item[{int}]{test\+\_\+num,  }\item[{double}]{x1,  }\item[{double}]{x2 }\end{DoxyParamCaption})}
 
+Print of roots depending on their number
 
 
-Function testing for correctness. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em test\+\_\+num} & -\/ number of answers \\
+\hline
+\mbox{\texttt{ in}}  & {\em x1,x2} & -\/ roots of the equation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{test__square_8cpp_a2018f9662c57d511887dca1d948e90b5}\label{test__square_8cpp_a2018f9662c57d511887dca1d948e90b5}} 
+\index{test\_square.cpp@{test\_square.cpp}!tests\_init@{tests\_init}}
+\index{tests\_init@{tests\_init}!test\_square.cpp@{test\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{tests\_init()}{tests\_init()}}
+{\footnotesize\ttfamily void tests\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{test__square_8cpp_ad3a777f549e7505fd06462ec11759123}\label{test__square_8cpp_ad3a777f549e7505fd06462ec11759123}} 
-\index{test\_square.cpp@{test\_square.cpp}!UnitTest\_Square@{UnitTest\_Square}}
-\index{UnitTest\_Square@{UnitTest\_Square}!test\_square.cpp@{test\_square.cpp}}
-\doxysubsubsection{\texorpdfstring{UnitTest\_Square()}{UnitTest\_Square()}}
-{\footnotesize\ttfamily int Unit\+Test\+\_\+\+Square (\begin{DoxyParamCaption}\item[{int}]{test\+\_\+num,  }\item[{int}]{num\+\_\+ans\+\_\+best,  }\item[{double}]{ans1\+\_\+best,  }\item[{double}]{ans2\+\_\+best,  }\item[{double}]{a,  }\item[{double}]{b,  }\item[{double}]{c }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{test__square_8cpp_ac40901951d30aa42f4dc531481aca048}\label{test__square_8cpp_ac40901951d30aa42f4dc531481aca048}} 
+\index{test\_square.cpp@{test\_square.cpp}!unit\_test\_square@{unit\_test\_square}}
+\index{unit\_test\_square@{unit\_test\_square}!test\_square.cpp@{test\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{unit\_test\_square()}{unit\_test\_square()}}
+{\footnotesize\ttfamily int unit\+\_\+test\+\_\+square (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsquare__equation}{square\+\_\+equation}}}]{tests }\end{DoxyParamCaption})}
+
+Calculating roots and verifying the answers
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em test\+\_\+num} & -\/ number of answers (in program) \\
+\hline
+\mbox{\texttt{ in}}  & {\em num\+\_\+ans\+\_\+best} & -\/ number of answers ( in test) \\
+\hline
+\mbox{\texttt{ in}}  & {\em ans1\+\_\+best,ans2\+\_\+best} & -\/ answers of the equation (in test) \\
+\hline
+\mbox{\texttt{ in}}  & {\em a,b,c} & -\/ coefficients\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if error and 0 if true 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{test__square_8cpp_a14b493d5d40f160bd5bfc0024a058c6f}\label{test__square_8cpp_a14b493d5d40f160bd5bfc0024a058c6f}} 
+\index{test\_square.cpp@{test\_square.cpp}!tests@{tests}}
+\index{tests@{tests}!test\_square.cpp@{test\_square.cpp}}
+\doxysubsubsection{\texorpdfstring{tests}{tests}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsquare__equation}{square\+\_\+equation}} tests\mbox{[}6\mbox{]}}
 

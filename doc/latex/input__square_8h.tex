@@ -1,26 +1,32 @@
 \hypertarget{input__square_8h}{}\doxysection{C\+:/\+Projects/\+Square\+\_\+equation/header/input\+\_\+square.h File Reference}
 \label{input__square_8h}\index{C:/Projects/Square\_equation/header/input\_square.h@{C:/Projects/Square\_equation/header/input\_square.h}}
-{\ttfamily \#include $<$assert.\+h$>$}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{input__square_8h_acc4bc83dbe1828f44e797a0a34d21bb9}{init\+\_\+square}} (double $\ast$a, double $\ast$b, double $\ast$c)
+void \mbox{\hyperlink{input__square_8h_afa847549e9dc6e4f49f651623bc456dc}{clear\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Clearing the input buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{input__square_8h_adf3830571d700e3eb3f70afee4e50498}{input\+\_\+square}} (double $\ast$a, double $\ast$b, double $\ast$c)
 \end{DoxyCompactItemize}
-\doxysubsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-const int \mbox{\hyperlink{input__square_8h_ad8fb043be996965731e1eb4005785279}{ATTEMPT\+\_\+\+INPUT}} = 3
-\begin{DoxyCompactList}\small\item\em variable input \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{input__square_8h_acc4bc83dbe1828f44e797a0a34d21bb9}\label{input__square_8h_acc4bc83dbe1828f44e797a0a34d21bb9}} 
-\index{input\_square.h@{input\_square.h}!init\_square@{init\_square}}
-\index{init\_square@{init\_square}!input\_square.h@{input\_square.h}}
-\doxysubsubsection{\texorpdfstring{init\_square()}{init\_square()}}
-{\footnotesize\ttfamily void init\+\_\+square (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{input__square_8h_afa847549e9dc6e4f49f651623bc456dc}\label{input__square_8h_afa847549e9dc6e4f49f651623bc456dc}} 
+\index{input\_square.h@{input\_square.h}!clear\_buffer@{clear\_buffer}}
+\index{clear\_buffer@{clear\_buffer}!input\_square.h@{input\_square.h}}
+\doxysubsubsection{\texorpdfstring{clear\_buffer()}{clear\_buffer()}}
+{\footnotesize\ttfamily void clear\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clearing the input buffer. 
+
+\mbox{\Hypertarget{input__square_8h_adf3830571d700e3eb3f70afee4e50498}\label{input__square_8h_adf3830571d700e3eb3f70afee4e50498}} 
+\index{input\_square.h@{input\_square.h}!input\_square@{input\_square}}
+\index{input\_square@{input\_square}!input\_square.h@{input\_square.h}}
+\doxysubsubsection{\texorpdfstring{input\_square()}{input\_square()}}
+{\footnotesize\ttfamily void input\+\_\+square (\begin{DoxyParamCaption}\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c }\end{DoxyParamCaption})}
 
 Input of coefficients with correctness check
 
@@ -29,17 +35,3 @@ Input of coefficients with correctness check
 \mbox{\texttt{ out}}  & {\em a,b,c} & -\/ quadratic coefficients \\
 \hline
 \end{DoxyParams}
-
-
-\doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{input__square_8h_ad8fb043be996965731e1eb4005785279}\label{input__square_8h_ad8fb043be996965731e1eb4005785279}} 
-\index{input\_square.h@{input\_square.h}!ATTEMPT\_INPUT@{ATTEMPT\_INPUT}}
-\index{ATTEMPT\_INPUT@{ATTEMPT\_INPUT}!input\_square.h@{input\_square.h}}
-\doxysubsubsection{\texorpdfstring{ATTEMPT\_INPUT}{ATTEMPT\_INPUT}}
-{\footnotesize\ttfamily const int ATTEMPT\+\_\+\+INPUT = 3}
-
-
-
-variable input 
-
-number of entered 
