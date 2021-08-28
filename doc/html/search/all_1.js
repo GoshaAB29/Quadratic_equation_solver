@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_5fans_0',['ERROR_ANS',['../solve__square_8h.html#a72bc10546324dde11447f116656a492fa1e32247aec4b11bba3307c323c612209',1,'solve_square.h']]]
+  ['b_0',['b',['../structsquare__equation.html#a8f480634bd274493e0c50430518316b1',1,'square_equation']]]
 ];

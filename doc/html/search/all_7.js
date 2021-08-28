@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['run_5funit_5ftests_1',['Run_Unit_Tests',['../test__square_8cpp.html#a169a2e1c3800a87ef31b1c0d2cdc562a',1,'Run_Unit_Tests():&#160;test_square.cpp'],['../test__square_8h.html#a169a2e1c3800a87ef31b1c0d2cdc562a',1,'Run_Unit_Tests():&#160;test_square.cpp']]]
+  ['one_5fans_0',['ONE_ANS',['../solve__square_8h.html#a72bc10546324dde11447f116656a492fa2bb5e52523fed2a0264be2248f1fe136',1,'solve_square.h']]],
+  ['output_5fsquare_1',['output_square',['../output__square_8h.html#a169401aae552dcaf19b465cf636f3267',1,'output_square(int num_ans, double *ans1, double *ans2):&#160;output_square.cpp'],['../output__square_8cpp.html#a169401aae552dcaf19b465cf636f3267',1,'output_square(int num_ans, double *ans1, double *ans2):&#160;output_square.cpp']]],
+  ['output_5fsquare_2ecpp_2',['output_square.cpp',['../output__square_8cpp.html',1,'']]],
+  ['output_5fsquare_2eh_3',['output_square.h',['../output__square_8h.html',1,'']]]
 ];

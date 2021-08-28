@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run_5funit_5ftests_0',['Run_Unit_Tests',['../test__square_8cpp.html#a169a2e1c3800a87ef31b1c0d2cdc562a',1,'Run_Unit_Tests():&#160;test_square.cpp'],['../test__square_8h.html#a169a2e1c3800a87ef31b1c0d2cdc562a',1,'Run_Unit_Tests():&#160;test_square.cpp']]]
+  ['output_5fsquare_0',['output_square',['../output__square_8h.html#a169401aae552dcaf19b465cf636f3267',1,'output_square(int num_ans, double *ans1, double *ans2):&#160;output_square.cpp'],['../output__square_8cpp.html#a169401aae552dcaf19b465cf636f3267',1,'output_square(int num_ans, double *ans1, double *ans2):&#160;output_square.cpp']]]
 ];

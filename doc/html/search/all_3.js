@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['error_5fans_0',['ERROR_ANS',['../solve__square_8h.html#a72bc10546324dde11447f116656a492fa1e32247aec4b11bba3307c323c612209',1,'solve_square.h']]]
 ];
