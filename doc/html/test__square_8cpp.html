@@ -68,7 +68,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">test_square.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -76,23 +77,29 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2018f9662c57d511887dca1d948e90b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__square_8cpp.html#a2018f9662c57d511887dca1d948e90b5">tests_init</a> ()</td></tr>
+<tr class="separator:a2018f9662c57d511887dca1d948e90b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288420d2cffa7ea7910cd21176735b69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__square_8cpp.html#a288420d2cffa7ea7910cd21176735b69">test_output</a> (int test_num, double x1, double x2)</td></tr>
-<tr class="memdesc:a288420d2cffa7ea7910cd21176735b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function testing for correctness.  <a href="test__square_8cpp.html#a288420d2cffa7ea7910cd21176735b69">More...</a><br /></td></tr>
 <tr class="separator:a288420d2cffa7ea7910cd21176735b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a777f549e7505fd06462ec11759123"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__square_8cpp.html#ad3a777f549e7505fd06462ec11759123">UnitTest_Square</a> (int test_num, int num_ans_best, double ans1_best, double ans2_best, double a, double b, double c)</td></tr>
-<tr class="separator:ad3a777f549e7505fd06462ec11759123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a169a2e1c3800a87ef31b1c0d2cdc562a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__square_8cpp.html#a169a2e1c3800a87ef31b1c0d2cdc562a">Run_Unit_Tests</a> ()</td></tr>
-<tr class="separator:a169a2e1c3800a87ef31b1c0d2cdc562a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40901951d30aa42f4dc531481aca048"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__square_8cpp.html#ac40901951d30aa42f4dc531481aca048">unit_test_square</a> (<a class="el" href="structsquare__equation.html">square_equation</a> <a class="el" href="test__square_8cpp.html#a14b493d5d40f160bd5bfc0024a058c6f">tests</a>)</td></tr>
+<tr class="separator:ac40901951d30aa42f4dc531481aca048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229302b3f6038aa41fa1395e68d98bb3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__square_8cpp.html#a229302b3f6038aa41fa1395e68d98bb3">run_unit_tests</a> ()</td></tr>
+<tr class="separator:a229302b3f6038aa41fa1395e68d98bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a14b493d5d40f160bd5bfc0024a058c6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsquare__equation.html">square_equation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__square_8cpp.html#a14b493d5d40f160bd5bfc0024a058c6f">tests</a> [6]</td></tr>
+<tr class="separator:a14b493d5d40f160bd5bfc0024a058c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a169a2e1c3800a87ef31b1c0d2cdc562a" name="a169a2e1c3800a87ef31b1c0d2cdc562a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a169a2e1c3800a87ef31b1c0d2cdc562a">&#9670;&nbsp;</a></span>Run_Unit_Tests()</h2>
+<a id="a229302b3f6038aa41fa1395e68d98bb3" name="a229302b3f6038aa41fa1395e68d98bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229302b3f6038aa41fa1395e68d98bb3">&#9670;&nbsp;</a></span>run_unit_tests()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Run_Unit_Tests </td>
+          <td class="memname">int run_unit_tests </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -135,63 +142,72 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Function testing for correctness. </p>
+<p >Print of roots depending on their number</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">test_num</td><td>- number of answers </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">x1,x2</td><td>- roots of the equation </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="ad3a777f549e7505fd06462ec11759123" name="ad3a777f549e7505fd06462ec11759123"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3a777f549e7505fd06462ec11759123">&#9670;&nbsp;</a></span>UnitTest_Square()</h2>
+<a id="a2018f9662c57d511887dca1d948e90b5" name="a2018f9662c57d511887dca1d948e90b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2018f9662c57d511887dca1d948e90b5">&#9670;&nbsp;</a></span>tests_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int UnitTest_Square </td>
+          <td class="memname">void tests_init </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>test_num</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>num_ans_best</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac40901951d30aa42f4dc531481aca048" name="ac40901951d30aa42f4dc531481aca048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40901951d30aa42f4dc531481aca048">&#9670;&nbsp;</a></span>unit_test_square()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">int unit_test_square </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsquare__equation.html">square_equation</a>&#160;</td>
+          <td class="paramname"><em>tests</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ans1_best</em>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+<p >Calculating roots and verifying the answers</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">test_num</td><td>- number of answers (in program) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_ans_best</td><td>- number of answers ( in test) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ans1_best,ans2_best</td><td>- answers of the equation (in test) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a,b,c</td><td>- coefficients</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if error and 0 if true </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a14b493d5d40f160bd5bfc0024a058c6f" name="a14b493d5d40f160bd5bfc0024a058c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b493d5d40f160bd5bfc0024a058c6f">&#9670;&nbsp;</a></span>tests</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ans2_best</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="structsquare__equation.html">square_equation</a> tests[6]</td>
         </tr>
       </table>
 </div><div class="memdoc">
