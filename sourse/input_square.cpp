@@ -7,6 +7,10 @@ void clear_buffer ()
 
 void input_square (double *a, double *b, double *c)
 {
+    assert (isfinite((int)a));
+    assert (isfinite((int)b));
+    assert (isfinite((int)c));
+
     printf ("Welcome to the quadratic equation solver. "
             "I can solve equations like Ax^2 + Bx + C = 0. "
             "Please enter these coefficients:");
