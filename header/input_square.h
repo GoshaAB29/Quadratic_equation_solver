@@ -2,6 +2,7 @@
 #pragma once
 #include <math.h>
 #include <stdio.h>
+#include <assert.h>
 
 /// number of entered
 const static int COEFFS_COUNT = 3;
